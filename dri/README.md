@@ -5,11 +5,12 @@ Command line tool to view active/aging issues associated with the Bot Framework 
 Requires Python.
 
 Currently performs the following (for repos managed by the Bot Framework):
+
 - Filters out Microsoft employees or vendors
-- Count of  **total issues** after `7/1/1019`.
+- Count of **total issues** after `7/1/1019`.
 - Issues that don't contain the **`Bot Services`** label.
 - Issues that don't contain the **`customer-reported`** label.
-- Issues that don't contain the  **`customer-replied-to`** label.
+- Issues that don't contain the **`customer-replied-to`** label.
 - Issues that are endanger of not being closed within 90 days.
 - Outputs to local console and generates a HTML report.
 
@@ -20,7 +21,9 @@ Install dependent package **(note: admin mode may be required.)**
 ```bash
 pip install -r requirements.txt
 ```
+
 ### Set your Git Credentials
+
 This tool uses a personal access token to authenticate with Github.
 
 - Go to https://github.com/settings/tokens
@@ -28,24 +31,29 @@ This tool uses a personal access token to authenticate with Github.
   - Give note like "Bot DRI tool"
   - Check the "`repo`" check box (and all items underneath)
   - Copy the token value (don't worry you can regen if you forget it)
- - On command line:
-          Windows: `set GIT_PERSONAL_TOKEN=<your token>`
+- On command line:
+  Windows: `set GIT_PERSONAL_TOKEN=<your token>`
 
-          Powershell: `$env:GIT_PERSONAL_TOKEN="<your token>"` (Note the quotes)
+         Powershell: `$env:GIT_PERSONAL_TOKEN="<your token>"` (Note the quotes)
 
-          Linux: `export GIT_PERSONAL_TOKEN=<your token>`
+         Linux: `export GIT_PERSONAL_TOKEN=<your token>`
 
- - To permanently set into your environment variables in Windows:
+- To permanently set into your environment variables in Windows:
 
-          `setx GIT_PERSONAL_TOKEN <your token>`
+         `setx GIT_PERSONAL_TOKEN <your token>`
+
+> NOTE: SAML access must be enabled for your access token. You can enable this on the tokens page in Github.
 
 ### Run
+
 ```bash
 python report.py
 ```
-  >Note: The first time you run, the Microsoft organizations members will be cached on disk.  This will take **several** minutes.
+
+> Note: The first time you run, the Microsoft organizations members will be cached on disk. This will take **several** minutes.
 
 Sample Output:
+
 ```bash
 PS D:\python\github\botframework-sdk\dri> python report.py
 Bot Framework SDK Github Report
@@ -64,7 +72,6 @@ Repo: microsoft/BotFramework-Composer:
    90-day stale : Customer issues older than 60 days: 0
 ...
 ```
-
 
 ### Care and feeding
 
