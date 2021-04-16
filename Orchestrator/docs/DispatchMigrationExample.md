@@ -21,7 +21,6 @@ Here, we will modify that sample to use Orchestrator in place of the top LUIS ar
   * Have access to create & use [LUIS][4] and [QnAMaker][5] services.
   * See [Dispatch Sample documentation][1] for full details.
 * Install [BF CLI][6]
-* Install BF CLI [Orchestrator Plugin][7]
 * Bot project must target x64 platform
 * Install latest supported version of [Visual C++ runtime](https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads)
 
@@ -522,5 +521,5 @@ Compile and run. The sample will use Orchestrator to arbitrate ("dispatch") to t
 [4]:https://luis.ai "LUIS"
 [5]:https://qnamaker.ai "QnAMaker"
 [6]:https://github.com/microsoft/botframework-cli "BF CLI"
-[7]:https://github.com/microsoft/botframework-cli/tree/beta/packages/orchestrator "Orchestrator plugin"
+[7]:https://github.com/microsoft/botframework-cli/tree/main/packages/orchestrator "Orchestrator plugin"
 [8]:https://github.com/microsoft/botbuilder-tools/tree/master/packages/Dispatch "Dispatch CLI"
