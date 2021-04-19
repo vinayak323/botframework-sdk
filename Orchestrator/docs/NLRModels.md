@@ -7,6 +7,8 @@ The following prebuilt language models are now available in [versions repository
 
 See the [References](#references) section for technical descriptions of the AI technology behind the models .
 
+See the [References](#references) section for technical descriptions of the AI technology behind the models .
+
 ## Default Models
 
 ### pretrained.20200924.microsoft.dte.00.06.en.onnx
