@@ -7,6 +7,8 @@ The following prebuilt language models are now available in [versions repository
 
 See the [References](#references) section for technical descriptions of the AI technology behind the models.
 
+See the [References](#references) section for technical descriptions of the AI technology behind the models .
+
 ## Default Models
 
 ### pretrained.20200924.microsoft.dte.00.06.en.onnx
@@ -144,6 +146,5 @@ The models are released under the following [License Terms][6].
 [9]: https://www.microsoft.com/en-us/research/blog/microsoft-deberta-surpasses-human-performance-on-the-superglue-benchmark/ "Microsoft DeBERTa - Microsoft Blog"
 [10]: https://innovation.microsoft.com/en-us/exploring-ai-at-scale "AI at Scale"
 [11]: https://www.microsoft.com/en-us/research/blog/microsoft-turing-universal-language-representation-model-t-ulrv2-tops-xtreme-leaderboard/ "Turing Universal Language Representation model"
-
 
 
