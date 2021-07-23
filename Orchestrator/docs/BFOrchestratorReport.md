@@ -6,7 +6,7 @@ In order to achieve high quality natural language processing (e.g. intent detect
 Learn more about Machine Learning evaluation methodology in the [References](# references) section below.
 
 To interpret the report, use the following guidance to actions to improve the snapshot file:
-- Incase utterances are the same or semantically similar, mrerge the two intent labels.
+- Incase utterances are the same or semantically similar, merge the two intent labels.
 - If the utterances are not semantically similar, split an intent's utterance pool and create a new intent label.
 - It the utterance are semantically close to a different intent label, change the intent label.
 - Rephrase an utterance and make it semantically closer to other utterances labled with the same intent.
